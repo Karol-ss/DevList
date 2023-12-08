@@ -1,0 +1,105 @@
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -32px, 0);
+    }
+    to {
+      opacity: initial;
+      transform: initial;
+    }
+  }
+  
+  .container {
+    max-width: 520px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 0 16px;
+    position: relative;
+    animation: fadeInDown 0.8s;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  
+  .inputCheckbox {
+    display: none;
+  }
+  
+  .customCheckbox {
+    width: 32px;
+    height: 32px;
+    background: #060b28;
+    border-radius: 50%;
+    cursor: pointer;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .customCheckboxCheck {
+    width: 32px;
+    height: 32px;
+    background: #060b28;
+    border-radius: 50%;
+    cursor: pointer;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .customCheckboxCheck:hover::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../../assets/icon-checked.svg");
+  }
+  
+  .customCheckboxChecked {
+    width: 24px;
+    height: 24px;
+    background: #2f5aff;
+    border-radius: 50%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .taskName {
+    flex: 1;
+    margin-left: 12px;
+  
+    font-family: "Roboto";
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: #fff;
+  }
+  .trashButton {
+    height: 100%;
+    background: none;
+    outline: none;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .trashButton > svg > path {
+    transition: 0.2s;
+  }
+  
+  .trashButton:hover > svg > path,
+  .trashButton:focus > svg > path {
+    fill: #ff334c;
+  }
+  

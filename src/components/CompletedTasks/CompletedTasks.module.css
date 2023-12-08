@@ -1,0 +1,19 @@
+.container {
+  max-width: 520px;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

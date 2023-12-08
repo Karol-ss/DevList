@@ -1,0 +1,39 @@
+.container {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      margin-top: 0;
+    }
+  
+    .container::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #24293f;
+      margin: 24px 0;
+    }
+  }
+  
+  .taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .todayTasksMessage {
+    font-family: "Roboto";
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 700;
+    color: #fff;
+  
+    display: flex;
+    justify-content: center;
+  }
+  
