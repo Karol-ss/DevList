@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
-import linkedinLogo from "../../assets/logo-linkedin.svg";
+import robloxLogo from "../../assets/logo-roblox.svg";
 import githubLogo from "../../assets/logo-github.svg";
-import telegramLogo from "../../assets/logo-telegram.svg";
+import instagramLogo from "../../assets/logo-instagram.svg";
 
 const Header = () => {
   return (
@@ -12,20 +12,20 @@ const Header = () => {
           <li>
             <a
               className={styles.link}
-              href="https://linkedin.com"
+              href="https://www.roblox.com/users/684205086/profile"
               target="blank"
             >
-              <img src={linkedinLogo} alt="Logo Linkedin" />
+              <img src={robloxLogo} alt="Logo Roblox" />
             </a>
           </li>
           <li>
-            <a className={styles.link} href="https://github.com" target="blank">
+            <a className={styles.link} href="https://github.com/Karol-ss" target="blank">
               <img src={githubLogo} alt="Logo GitHub" />
             </a>
           </li>
           <li>
-            <a className={styles.link} href="https://t.me" target="blank">
-              <img src={telegramLogo} alt="Logo Telegram" />
+            <a className={styles.link} href="https://www.instagram.com/kkrol._/" target="blank">
+              <img src={instagramLogo} alt="Logo Instagram" />
             </a>
           </li>
         </ul>
